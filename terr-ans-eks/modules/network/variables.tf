@@ -17,16 +17,16 @@ variable "igw-name" {
 variable "pub_cidr_block" {
   type        = list(string)
   description = "vpc-name for the eks cluster"
-  default     = [ "10.0.1.0/24", "10.0.50.0/24" ]
+  default     = ["10.0.1.0/24", "10.0.50.0/24"]
 }
 
 variable "private_cidr_block" {
   type        = list(string)
   description = "vpc-name for the eks cluster"
-  default     = [ "10.0.100.0/24", "10.0.150.0/24" ]
+  default     = ["10.0.100.0/24", "10.0.150.0/24"]
 }
 
 variable "eks_cluster_name" {
   description = "name of eks cluster"
-  type = string
+  type        = string
 }

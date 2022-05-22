@@ -28,5 +28,5 @@ variable "igw-name" {
 
 variable "eks_cluster_name" {
   description = "name of eks cluster"
-  type = string
+  type        = string
 }
